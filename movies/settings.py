@@ -137,11 +137,13 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('JWT',),
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=10),
 }
-CORS_ORIGIN_WHITELIST = (
-    'https://localhost:8080',
-    'https://127.0.0.1:8080'
-)
-CORS_ORIGIN_ALLOW_ALL = True
+# CORS_ORIGIN_WHITELIST = (
+#     'https://localhost:8080',
+#     'https://127.0.0.1:8080'
+# )
+# CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 import os
 
